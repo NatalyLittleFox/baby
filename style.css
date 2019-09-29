@@ -1,6 +1,10 @@
 html {
   font-size: 16px;
+<<<<<<< HEAD
   }
+=======
+}
+>>>>>>> 4f490d198b3c827a9dcdbedf8dd7d38a9c8a7716
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -218,7 +222,9 @@ body {
     font-size: 42px;  
     margin-bottom: 50px;
   }
-
+.nav-item {
+  font-size: 1.2rem;
+}
   .header-content {
     text-align: center;
   }
