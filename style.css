@@ -95,9 +95,11 @@ background: linear-gradient(to top, rgb(255, 255, 255), rgb(195, 250, 250), rgb(
 
 .content-img {
   background: url(img/bg2.png);
+  border-radius: 50%;
   background-position: center;
-  height: 483px;
-  margin: 0;
+  height: 450px;
+  max-width: 1110px;
+  margin: auto;
 }
 
 
