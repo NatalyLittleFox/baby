@@ -95,11 +95,13 @@ background: linear-gradient(to top, rgb(255, 255, 255), rgb(195, 250, 250), rgb(
 
 .content-img {
   background: url(img/bg2.png);
-  border-radius: 50%;
+  border-radius: 150px;
+  box-shadow: 0 0 20px 10px #008eb5;
   background-position: center;
-  height: 450px;
+  height: 400px;
   max-width: 1110px;
   margin: auto;
+  margin-bottom: 80px;
 }
 
 
@@ -107,7 +109,7 @@ background: linear-gradient(to top, rgb(255, 255, 255), rgb(195, 250, 250), rgb(
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 483px;
+  height: 400px;
 }
 
 .content-img_text {
@@ -191,7 +193,7 @@ background: linear-gradient(to top, rgb(255, 255, 255), rgb(195, 250, 250), rgb(
   max-width: 540px;
   font-size: 16px;
 }
-/* div {border: 1px solid red;} */
+/* div {border: 1px solid red;}  */
 @media (max-width: 1200px) {}
 
 @media (max-width: 990px) {
@@ -235,9 +237,12 @@ background: linear-gradient(to top, rgb(255, 255, 255), rgb(195, 250, 250), rgb(
   .content-text {
     font-size: 24px;
   }
+  .content-img {
+    max-width: 80%;
+  }
   .content-img_text {    
-  font-size: 42px;
-    padding: 0 10px;
+  font-size: 36px;
+  padding: 0 10px;
   }
   .about_img {
     float: none;
