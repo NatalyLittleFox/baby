@@ -1,7 +1,14 @@
+html {
+  font-size: 16px;
+  @media (max-width: 768px) {
+    font-size: 2px;
+  }
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  color: rgb(35, 35, 35);
+  color: rgb(35, 35, 35);   
 }
 
 .container {
@@ -41,7 +48,7 @@ body {
 
 .nav-item {
   margin-right: 20px;
-  font-size: 22px;
+  font-size: 1.5rem;
 }
 
 .nav-item:last-child {
@@ -72,7 +79,7 @@ body {
 }
 
 .header_title {
-  font-size: 72px;
+  font-size: 4rem;
   color: rgb(255, 133, 4);
   margin: 0;
 }
@@ -89,7 +96,7 @@ body {
 
 .content-text_title {
   text-align: center;
-  font-size: 58px;
+  font-size: 2.5rem;
   color: #007765;
 }
 
@@ -109,7 +116,7 @@ body {
 
 .content-img_text {
   font-style: italic;
-  font-size: 48px;
+  font-size: 3rem;
   text-align: center;
   color: aliceblue;
   padding: 0 110px;
@@ -133,10 +140,11 @@ body {
   text-align: center;
 }
 
-.team-img {
-  border-radius: 50%;
+.team-img {  
+  display: block;
+  margin: auto;
+  border-radius: 5px;
   width: 168px;
-  height: 168px;
 }
 
 .team-block_content {
@@ -146,11 +154,11 @@ body {
 }
 
 .team-name {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .team-text {
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .about {
@@ -158,6 +166,7 @@ body {
 }
 
 .about_img {
+  display: block;
   float: left;
   height: 350px;
   width: 312px;
@@ -165,7 +174,7 @@ body {
 }
 
 .content-text {
-  font-size: 32px;
+  font-size: 2rem;
   text-align: justify;
 }
 
@@ -184,9 +193,8 @@ body {
 
 .copy_text {
   max-width: 540px;
-  font-size: 18px;
+  font-size: 1rem;
 }
-
 @media (max-width: 1200px) {}
 
 @media (max-width: 990px) {
@@ -213,11 +221,14 @@ body {
     text-align: center;
   }
 
-  .header_title {
-    font-size: 54px;
-  }
-
   .top_logo {
     max-width: 60%;
+  }
+  .content-img_text {
+    padding: 0 10px;
+  }
+  .about_img {
+    float: none;
+    margin:auto;
   }
 }

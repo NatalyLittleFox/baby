@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="style.css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext"
-        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+      
+        
 </head>
 
 <body>
@@ -18,8 +23,8 @@
             <div class="top">
                 <img src="img/logo.jpg" alt="" class="logo">
                 <ul class="nav">
-                    <li class="nav-item"><a class="nav-item_link" href="">Обо мне</a></li>
-                    <li class="nav-item"><a class="nav-item_link" href="">Фотогалерея</a></li>
+                    <li class="nav-item"><a class="nav-item_link" href="#about_me">Обо мне</a></li>
+                    <li class="nav-item"><a class="nav-item_link" href="#photo">Фотогалерея</a></li>
                     <li class="nav-item"><a class="nav-item_link" href="">Контакты</a></li>
                 </ul>
             </div>
@@ -27,7 +32,7 @@
             <div class="header-content">
                 <img class="top_logo" src="img/sasha.png">
                 <div class="header-content_text">
-                    <h1 class="header_title">Сашка - это Я!!!</h1>
+                    <h1 class="header_title">Сашка - это Я!</h1>
                 </div>
             </div>
         </div>
@@ -35,7 +40,7 @@
     <section class="content">
         <div class="container">
             <div class="content-top">
-                <h2 class="content-text_title">Кто я такой?</h2>
+                <h2 id="about_me" class="content-text_title">Кто я такой?</h2>
                 <p class="content-text">Привет! Я очень рад видеть тебя на моей страничке! Давай я расскажу немного о
                     себе.
                 </p>
@@ -65,8 +70,8 @@
     <section class="about">
         <div class="container">
             <h2 class="content-text_title">Что я люблю</h2>
-            <div class="about_content">
-                <img class="about_img" src="img/about.jpg" alt="">
+            <img class="about_img" src="img/about.jpg" alt="">
+                
                 <p class="content-text">Я люблю ВИНТЫ! Во всех их проявлениях: вертушки, вентиляторы, винты на самолетах
                     и вертолетах, кулеры на компьютерах... Настоящие, игрушечные или нарисованные - это неважно, люблю
                     их все и в любых количествах.
@@ -77,56 +82,55 @@
                 <p class="content-text">Ну, а еще, как и все малыши, люблю бегать, прыгать, немножко хулиганить, лазать
                     по лестницам, мешать маме и папе работать на компе, рисовать, раскидывать игрушки и вредничать. И
                     очень не люблю спать!</p>
-            </div>
         </div>
     </section>
 
     <section class="content">
         <div class="container">
             <div class="team_title">
-                <h2 class="content-text_title">Мои избранные фотографии</h2>
+                <h2 id="photo" class="content-text_title">Мои избранные фотографии</h2>
             </div>
             <div class="team">
                 <div class="team-block">
-                    <img src="img/image-1.png" alt="" class="team-img">
+                    <img src="img/121867973_42.png" alt="" class="team-img">
                     <div class="team-block_content">
-                        <h3 class="team-name">Richard Hendricks</h3>
-                        <p class="team-text">Senior Programmer</p>
+                        <h3 class="team-name">Фотка</h3>
+                        <p class="team-text">Описание</p>
                     </div>
                 </div>
                 <div class="team-block">
-                    <img src="img/image-1.png" alt="" class="team-img">
+                    <img src="img/121867973_42.png" alt="" class="team-img">
                     <div class="team-block_content">
-                        <h3 class="team-name">Richard Hendricks</h3>
-                        <p class="team-text">Senior Programmer</p>
+                        <h3 class="team-name">Фотка</h3>
+                        <p class="team-text">Описание</p>
                     </div>
                 </div>
                 <div class="team-block">
-                    <img src="img/image-1.png" alt="" class="team-img">
+                    <img src="img/121867973_42.png" alt="" class="team-img">
                     <div class="team-block_content">
-                        <h3 class="team-name">Richard Hendricks</h3>
-                        <p class="team-text">Senior Programmer</p>
+                        <h3 class="team-name">Фотка</h3>
+                        <p class="team-text">Описание</p>
                     </div>
                 </div>
                 <div class="team-block">
-                    <img src="img/image-1.png" alt="" class="team-img">
+                    <img src="img/121867973_42.png" alt="" class="team-img">
                     <div class="team-block_content">
-                        <h3 class="team-name">Richard Hendricks</h3>
-                        <p class="team-text">Senior Programmer</p>
+                        <h3 class="team-name">Фотка</h3>
+                        <p class="team-text">Описание</p>
                     </div>
                 </div>
                 <div class="team-block">
-                    <img src="img/image-1.png" alt="" class="team-img">
+                    <img src="img/121867973_42.png" alt="" class="team-img">
                     <div class="team-block_content">
-                        <h3 class="team-name">Richard Hendricks</h3>
-                        <p class="team-text">Senior Programmer</p>
+                        <h3 class="team-name">Фотка</h3>
+                        <p class="team-text">Описание</p>
                     </div>
                 </div>
                 <div class="team-block">
-                    <img src="img/image-1.png" alt="" class="team-img">
+                    <img src="img/121867973_42.png" alt="" class="team-img">
                     <div class="team-block_content">
-                        <h3 class="team-name">Richard Hendricks</h3>
-                        <p class="team-text">Senior Programmer</p>
+                        <h3 class="team-name">Фотка</h3>
+                        <p class="team-text">Описание</p>
                     </div>
                 </div>
             </div>
@@ -140,6 +144,39 @@
             </p>
         </div>
     </footer>
+    <script>
+        $('.team').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,  
+      responsive: [
+        {
+          breakpoint: 990,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            arrows: true,
+            autoplaySpeed: 5000,
+            autoplay:true
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            arrows: true,
+            autoplaySpeed: 5000,
+            autoplay:true
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+    </script>
 </body>
 
 </html>
