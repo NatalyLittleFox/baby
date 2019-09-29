@@ -1,7 +1,5 @@
 html {
   font-size: 16px;
-  @media (max-width: 768px) {
-    font-size: 2px;
   }
 }
 
@@ -48,7 +46,7 @@ body {
 
 .nav-item {
   margin-right: 20px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .nav-item:last-child {
@@ -215,6 +213,9 @@ body {
   .top {
     flex-direction: column;
     min-height: 100px;
+  }
+  .header_title {
+    font-size: 3.5rem;
   }
 
   .header-content {
