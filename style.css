@@ -199,7 +199,7 @@ background: linear-gradient(to top, rgb(255, 255, 255), rgb(195, 250, 250), rgb(
 
 @media (max-width: 990px) {
   .container {
-    max-width: 80%;
+    max-width: 100%;
   }
 
   .header-content {
@@ -209,7 +209,7 @@ background: linear-gradient(to top, rgb(255, 255, 255), rgb(195, 250, 250), rgb(
 
 @media (max-width: 768px) {
   .container {
-    max-width: 70%;
+    max-width: 100%;
   }
 
   .top {
