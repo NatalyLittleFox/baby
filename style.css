@@ -116,7 +116,7 @@ background: linear-gradient(to top, rgb(255, 255, 255), rgb(195, 250, 250), rgb(
   font-style: italic;
   font-size: 48px;
   text-align: center;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   padding: 0 110px;
 }
 
