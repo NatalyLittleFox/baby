@@ -1,13 +1,17 @@
-*, *:after, *:before {
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   color: rgb(35, 35, 35);   
 }
-
+/* div {
+  border: 1px solid red; 
+}*/
+.top *:focus,.top *::before,.top *::after {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: content-box; /*это свойство обязательно*/
+}  
 .container {
   max-width: 1110px;
   margin: auto;
@@ -44,6 +48,7 @@ body {
 }
 
 .nav-item {
+  display: inline-block;
   margin-right: 20px;
   font-size: 32px;
 }
@@ -53,8 +58,9 @@ body {
 }
 
 .nav-item_link {
+  display: block;
   text-decoration: none;
-  color: #00b599;
+  color: rgb(255, 133, 4);
   font-weight: bold;
 }
 
@@ -83,7 +89,7 @@ body {
 hr {
   display: block; 
   margin: 0 auto;
-  border: 2px solid #00b599;
+  border: 2px solid rgb(255, 133, 4);
   border-bottom-width: 0;
   width: 450px;
 }
@@ -194,7 +200,7 @@ background: linear-gradient(to top, rgb(255, 255, 255), rgb(195, 250, 250), rgb(
 }
 
 .copy_text {
-  max-width: 520px;
+  max-width: 500px;
   font-size: 16px;
 }
 /* div {border: 1px solid red;}  
@@ -206,6 +212,7 @@ img {border: 1px solid blue;}   */
   hr {
     width: 350px;
     } 
+    
   .header-content {
     flex-direction: column;
   }
@@ -215,18 +222,17 @@ img {border: 1px solid blue;}   */
   .container {
     max-width: 90%;
   }
-
-  .top {
+  
+  .header-content {
     flex-direction: column;
+  }
+  .top {
     min-height: 100px;
   }
   .header_title {
     font-size: 42px;  
     margin-bottom: 50px;
   }
-.nav-item {
-  font-size: 20px;
-}
   .header-content {
     text-align: center;
   }
@@ -257,17 +263,59 @@ width: 250px;
     float: none;
     margin:auto;
   }
-}
+  .nav-item {
+      width: 80%;
+      font-size: 20px;
+  }
+  .nav {
+    display: none;
+  }
+  .nav-menu::before,
+  .top::after {
+    content: '';
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    display: block;
+    background-image: url(img/togger.png);
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    background-color: rgb(255, 133, 4);
+    border: 9px solid rgb(255, 133, 4);
+  }
+  .top::after {
+    background-position: -24px -24px;
+    z-index: 1;
+  }
+  .nav-menu::before {
+    z-index: 2;
+  }
+  .nav-menu:focus::before {
+    z-index: 0;
+  }
+  .nav-menu:focus .nav,
+  .nav:hover { /*решаем проблему со скликиванием*/
+    display: block;
+  }
+  .copy_text {
+    max-width: 400px;
+    font-size: 14px;
+  }
+  }
 
 @media (max-width: 320px) {
   .container {
     max-width: 95%;
+  }
+  .header_title {
+    font-size: 14px;  
   }
   .content-img_text {    
     font-size: 20px;
     padding: 0 10px;
     }
   hr {
-    width: 150px;
+    width: 450px;
     } 
 }
