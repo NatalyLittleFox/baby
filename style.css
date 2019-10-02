@@ -12,6 +12,9 @@ body {
 .header-top *:focus,
 .header-top *::before,
 .header-top *::after {
+  padding: 0;
+  margin: 0;
+  outline: 0;
   box-sizing: content-box; /*это свойство обязательно*/
 }
 
@@ -23,17 +26,11 @@ body {
 }
 
 .logo {
-  margin-bottom: 15px;
-}
-
-.header_nav-item {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .nav {
-  display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -161,8 +158,8 @@ hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .photo-block {
@@ -235,19 +232,21 @@ img {
 
   .nav-item {
     width: 80%;
+    text-align: center;
     font-size: 20px;
   }
 
   .nav {
     display: none;
+    padding-top: 10px;
   }
 
   .nav-menu::before,
   .header-top::after {
     content: "";
     position: absolute;
-    top: 38px;
-    right: 35px;
+    top: 42px;
+    right: 25px;
     display: block;
     background-image: url(img/togger.png);
     cursor: pointer;
