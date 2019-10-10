@@ -216,7 +216,7 @@ li {
     width: 350px;
   }
 }
-@media (max-width: 768px) {    
+@media (max-width: 768px) {
   .header-top {
     min-height: 100px;
   }
@@ -310,14 +310,14 @@ li {
   }
 }
 
-@media (max-width: 400px) {  
+@media (max-width: 400px) {
   .header_title {
     font-size: 24px;
   }
   .header-top {
     flex-wrap: wrap;
   }
-  .nav-menu {    
+  .nav-menu {
   width: 100%;
   }
   .nav {
